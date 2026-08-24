@@ -7,7 +7,8 @@
   padding: 0;
 }
 
-body {
+/* Estilos do Body unificados (.layout-body + body) */
+body, .layout-body {
   /* Imagem de fundo com overlay escuro para contraste e legibilidade */
   background: 
     linear-gradient(rgba(2, 8, 23, 0.55), rgba(2, 8, 23, 0.55)),
@@ -33,22 +34,33 @@ body {
   padding: 2.5rem;
   max-width: 700px;
   width: 100%;
+  margin: 0 auto;
   text-align: center;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
-/* Classes para as cores do texto */
+/* Dourado Original */
 .text-gold {
   color: #F1C40F;
   margin-bottom: 0.5rem;
 }
 
+/* Verde Retornado (#00ffa3) */
 .text-aura-green {
-  color: #A3E635;
+  color: #00ffa3;
   line-height: 1.6;
+}
+
+/* Divisor Semântico com Gradiente */
+.section-divider {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #F1C40F, #3DC9D9, transparent);
+  margin: 0.5rem 0;
+  opacity: 0.6;
 }
 
 /* Estilo da Foto de Perfil */
@@ -70,7 +82,7 @@ body {
   margin-top: 0.5rem;
 }
 
-/* Listas e Links com Estilo de Botão */
+/* Listas e Links */
 ul {
   list-style: none;
   display: flex;
@@ -85,9 +97,10 @@ ul {
   flex-wrap: wrap;
 }
 
-/* Bloco dos links com semi-transparência */
+/* Bloco dos links em ciano (#3DC9D9) */
 nav a, 
-footer a {
+.portfolio-contact a,
+.site-links a {
   display: inline-block;
   background-color: rgba(255, 255, 255, 0.08);
   color: #3DC9D9;
@@ -99,16 +112,18 @@ footer a {
   transition: all 0.2s ease-in-out;
 }
 
-/* Efeito ao passar o mouse */
+/* Efeito Hover dos Links */
 nav a:hover, 
-footer a:hover {
+.portfolio-contact a:hover,
+.site-links a:hover {
   background-color: #3DC9D9;
   color: #0E2773;
+  text-decoration: none;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(61, 201, 217, 0.3);
 }
 
-/* Espaçamento para afastar a seção de contato da de educação */
+/* Espaçamento para a seção de contato */
 .portfolio-contact {
   margin-top: 1.5rem;
 }

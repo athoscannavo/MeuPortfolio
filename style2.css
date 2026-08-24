@@ -1,19 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
-/* Reset e Fonte */
+/* Reset base */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* Layout Principal */
 body {
-  /* Imagem de fundo com overlay escuro para contraste e legibilidade */
-  background: 
-    linear-gradient(rgba(2, 8, 23, 0.55), rgba(2, 8, 23, 0.55)),
-    url('aurelionbgbom.jpg') no-repeat center center fixed;
+  /* Fundo corrigido */
+  background-image: linear-gradient(rgba(2, 8, 23, 0.55), rgba(2, 8, 23, 0.55)), url('aurelionbgbom.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
-  
+
   font-family: 'Inter', sans-serif;
   color: #E2E8F0;
   min-height: 100vh;
@@ -23,7 +25,7 @@ body {
   padding: 2rem 1rem;
 }
 
-/* Container Principal com efeito Glassmorphism */
+/* Container Semitransparente */
 .portfolio-container {
   background-color: rgba(7, 21, 59, 0.70);
   backdrop-filter: blur(12px);
@@ -31,46 +33,47 @@ body {
   border: 1px solid rgba(61, 201, 217, 0.3);
   border-radius: 16px;
   padding: 2.5rem;
-  max-width: 700px;
+  max-width: 1200px;
   width: 100%;
   text-align: center;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
-/* Classes para as cores do texto */
+/* Tipografia */
 .text-gold {
   color: #F1C40F;
   margin-bottom: 0.5rem;
 }
 
 .text-aura-green {
-  color: #A3E635;
+  color: #00ffa3;
   line-height: 1.6;
 }
 
-/* Estilo da Foto de Perfil */
-.profile-figure {
-  margin: 1rem 0;
+/* Divisor */
+.section-divider {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #F1C40F, #3DC9D9, transparent);
+  margin: 0.5rem 0;
+  opacity: 0.6;
 }
 
+/* Avatar */
 .profile-figure img {
-  width: 130px;
-  height: 130px;
+  width: 430px;
+  height: 430px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #3DC9D9;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  margin-top: 1rem;
 }
 
-.profile-figure figcaption {
-  font-size: 0.85rem;
-  margin-top: 0.5rem;
-}
-
-/* Listas e Links com Estilo de Botão */
+/* Listas base */
 ul {
   list-style: none;
   display: flex;
@@ -79,15 +82,14 @@ ul {
   margin-top: 1rem;
 }
 
+/* Grid de Botões (Links) */
 .site-links {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-/* Bloco dos links com semi-transparência */
-nav a, 
-footer a {
+.site-links a {
   display: inline-block;
   background-color: rgba(255, 255, 255, 0.08);
   color: #3DC9D9;
@@ -99,16 +101,9 @@ footer a {
   transition: all 0.2s ease-in-out;
 }
 
-/* Efeito ao passar o mouse */
-nav a:hover, 
-footer a:hover {
+.site-links a:hover {
   background-color: #3DC9D9;
   color: #0E2773;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(61, 201, 217, 0.3);
-}
-
-/* Espaçamento para afastar a seção de contato da de educação */
-.portfolio-contact {
-  margin-top: 1.5rem;
 }
