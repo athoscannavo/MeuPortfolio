@@ -8,7 +8,7 @@
 }
 
 body {
-  /* Escurecido: de azul-noite profundo (#020817) até azul-cobalto e ciano escuro */
+  /* fundo de gradiente animado */
   background: linear-gradient(-45deg, #020817, #07153B, #0E2773, #023146);
   background-size: 300% 300%;
   animation: gradientAnimation 8s ease infinite;
@@ -28,7 +28,7 @@ body {
   100% { background-position: 0% 50%; }
 }
 
-/* Container Principal com Estilo Card (Efeito Glassmorphism) */
+/* classe para a caixa principal da página  */
 .portfolio-container {
   background-color: rgba(14, 39, 115, 0.75); /* Fundo azul com transparência ajustada */
   backdrop-filter: blur(16px); /* Blur aumentado para destacar do fundo */
@@ -44,7 +44,7 @@ body {
   gap: 2rem;
 }
 
-/* Cores e Títulos */
+/* Classes para as cores do texto */
 .text-gold {
   color: #F1C40F;
   margin-bottom: 0.5rem;
@@ -102,6 +102,7 @@ footer a {
   transition: all 0.2s ease-in-out;
 }
 
+/*Transição de cor ao passar o mouse*/
 nav a:hover, 
 footer a:hover {
   background-color: #3DC9D9;
