@@ -1,0 +1,21 @@
+1. Qual é a diferença entre o HTML e o CSS?
+O HTML é uma estrutura de formatação para páginas de internet. O CSS é um estilizador útil para tornar páginas html mais apresentáveis sem alterar drasticamente o código fonte.
+2. O que são as chamadas "tags" no HTML?
+São códigos usados para avisar o navegador sobre o tipo de conteúdo na tela. 
+3. Como ligar o arquivo de estilo CSS na página HTML?
+Usamos a tag <link> dentro da área <head> do HTML.
+4. Qual é a diferença entre usar uma class e um id no CSS?
+A class serve para aplicar o mesmo estilo em vários elementos ao mesmo tempo, enquanto o id deve ser usado para identificar apenas um elemento único na página.
+5. Como adicionar uma imagem em uma página web?
+Usamos a tag <img>, informando o caminho do arquivo depois do src
+6. Como transformar um texto em um link clicável?
+Usamos a tag <a> para colocar o texto, e então usamos o href para colocar o link aonde o usuário será direcionado.
+7. Como faço para deixar a interação mais responsiva para o usuário?
+Usamos o efeito de hover para aplicar efeitos quando o mouse toca um item da estrutura.
+8. Como posso deixar a página mais bonita? 
+Podemos utilizar o estilo nav inline_block para transformar os links normais em caixinhas bonitinhas. Utilizando os efeitos de hover, Podemos
+inclusive levantar um pouco os bloquinhos ou mudar a cor deles.
+9. A seção de educação e o footer de contato ficaram muito próximos um do outro. Compo posso aumentar o espaçamento entre eles?
+Podemos criar uma classe para o espaçamento do topo de cada seçaõ, como o margin top. Podemos ainda definir um valor para o espaçamento Utilizando
+a unidade rem, que é proporcional em diferentes níveis de zoom.
+10.
