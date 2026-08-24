@@ -18,4 +18,5 @@ inclusive levantar um pouco os bloquinhos ou mudar a cor deles.
 9. A seção de educação e o footer de contato ficaram muito próximos um do outro. Compo posso aumentar o espaçamento entre eles?
 Podemos criar uma classe para o espaçamento do topo de cada seçaõ, como o margin top. Podemos ainda definir um valor para o espaçamento Utilizando
 a unidade rem, que é proporcional em diferentes níveis de zoom.
-10.
+10. Recebi um feedback de que tudo parece estar embolado junto na página. Me sugeriram que eu adicionasse linhas divisiórias à Página. Como?
+11. 

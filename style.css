@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
-/* Reset base */
+/* Formatação da página para ser compatível entre navegadores */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Layout Principal */
+
 body {
-  /* Fundo corrigido */
+  /* Cor base do fundo e imagem de fundo */
   background-image: linear-gradient(rgba(2, 8, 23, 0.55), rgba(2, 8, 23, 0.55)), url('aurelionbgbom.jpg');
   background-position: center center;
   background-repeat: no-repeat;
