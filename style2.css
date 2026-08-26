@@ -7,7 +7,6 @@
   padding: 0;
 }
 
-
 body {
   /* Cor base do fundo e imagem de fundo */
   background-image: linear-gradient(rgba(2, 8, 23, 0.55), rgba(2, 8, 23, 0.55)), url('aurelionbgbom.jpg');
@@ -42,7 +41,18 @@ body {
   gap: 1.5rem;
 }
 
-/* Tipografia */
+/* Avatar */
+.profile-figure img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #3DC9D9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  margin-top: 1rem;
+}
+
+/* Cores para texto */
 .text-gold {
   color: #F1C40F;
   margin-bottom: 0.5rem;
@@ -53,7 +63,7 @@ body {
   line-height: 1.6;
 }
 
-/* Divisor */
+/* Linhas divisórias */
 .section-divider {
   border: none;
   height: 1px;
@@ -62,18 +72,7 @@ body {
   opacity: 0.6;
 }
 
-/* Avatar */
-.profile-figure img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #3DC9D9;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-  margin-top: 1rem;
-}
-
-/* Listas base */
+/* Listas para colocar os botões */
 ul {
   list-style: none;
   display: flex;
@@ -82,7 +81,7 @@ ul {
   margin-top: 1rem;
 }
 
-/* Grid de Botões (Links) */
+/* Grid de Botões e Animação dos botões(Links) */
 .site-links {
   flex-direction: row;
   justify-content: center;
@@ -106,4 +105,32 @@ ul {
   color: #0E2773;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(61, 201, 217, 0.3);
+}
+
+/* Estilização da Seção de Idiomas */
+.portfolio-languages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.languages-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.languages-list li {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.25rem 0;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.languages-list li:hover {
+  transform: translateY(-1px);
+  color: #3DC9D9;
 }
