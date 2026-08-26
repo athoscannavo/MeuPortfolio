@@ -42,26 +42,6 @@ body {
   gap: 1.5rem;
 }
 
-/* Tipografia */
-.text-gold {
-  color: #F1C40F;
-  margin-bottom: 0.5rem;
-}
-
-.text-aura-green {
-  color: #00ffa3;
-  line-height: 1.6;
-}
-
-/* Divisor */
-.section-divider {
-  border: none;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, #F1C40F, #3DC9D9, transparent);
-  margin: 0.5rem 0;
-  opacity: 0.6;
-}
-
 /* Avatar */
 .profile-figure img {
   width: 260px;
@@ -73,7 +53,27 @@ body {
   margin-top: 1rem;
 }
 
-/* Listas base */
+/* Cores para texto */
+.text-gold {
+  color: #F1C40F;
+  margin-bottom: 0.5rem;
+}
+
+.text-aura-green {
+  color: #00ffa3;
+  line-height: 1.6;
+}
+
+/* Linhas divisiórias */
+.section-divider {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #F1C40F, #3DC9D9, transparent);
+  margin: 0.5rem 0;
+  opacity: 0.6;
+}
+
+/* Listas para colocar os botões */
 ul {
   list-style: none;
   display: flex;
@@ -82,7 +82,7 @@ ul {
   margin-top: 1rem;
 }
 
-/* Grid de Botões (Links) */
+/* Grid de Botões e Animação dos botões(Links) */
 .site-links {
   flex-direction: row;
   justify-content: center;
