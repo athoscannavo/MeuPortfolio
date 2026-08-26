@@ -1,109 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athos Cannavo - Portfólio</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
 
-/* Formatação da página para ser compatível entre navegadores */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+<body class="layout-body">
+    
+    <main class="portfolio-container">
+        
+        <!-- Cabeçalho (Imagem de Perfil e Nome) -->
+        <header class="portfolio-header">
+            <figure class="profile-figure">
+                <img src="avatarAthos.jpg" alt="Athos Cannavo">
+            </figure>
+            <div class="header-info">
+                <h1 class="text-gold">Athos Cannavo</h1>
+                <p class="text-aura-green">Desenvolvedor Full Stack</p>
+            </div>
+        </header>
 
+        <hr class="section-divider">
 
-body {
-  /* Cor base do fundo e imagem de fundo */
-  background-image: linear-gradient(rgba(2, 8, 23, 0.55), rgba(2, 8, 23, 0.55)), url('aurelionbgbom.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+        <!-- 1. Sobre Mim -->
+        <section class="portfolio-about">
+            <h2 class="text-gold">Sobre Mim</h2>
+            <p class="text-aura-green">Sou um Desenvolvedor Full Stack, Mas me dedico mais à área do Backend.</p>
+            <p class="text-aura-green">Já Desenvolvi programas em Java, Python e C++.</p>
+            <p class="text-aura-green">Utilizei minhas habilidades em HTML e CSS para gerar essa página de Portfólio, que representa meu nível atual em Frontend.</p>
+            <p class="text-aura-green">Atualmente estou estudando C e Assembly enquanto aprimoro minhas habilidades em programação.</p>
+            <p class="text-aura-green">Minhas Soft Skills incluem a comunicação e atendimento eficazes e compreensivos, a resolução sistemática de problemas e o trabalho em equipe fundado em nas metas atuais.</p>
+        </section>
 
-  font-family: 'Inter', sans-serif;
-  color: #E2E8F0;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem 1rem;
-}
+        <hr class="section-divider">
 
-/* Container Semitransparente */
-.portfolio-container {
-  background-color: rgba(7, 21, 59, 0.70);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(61, 201, 217, 0.3);
-  border-radius: 16px;
-  padding: 2.5rem;
-  max-width: 600px;
-  width: 100%;
-  text-align: center;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
+        <!-- 2. Contato -->
+        <section class="portfolio-contact">
+            <h2 class="text-gold">Contato</h2>
+            <nav>
+                <ul class="site-links">
+                    <li><a href="mailto:trabalhoathos@gmail.com">trabalhoathos@gmail.com</a></li>
+                    <li><a href="https://www.linkedin.com/in/athos-cannavo-b810a71b2/" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
+                    <li><a href="https://github.com/athoscannavo" target="_blank" rel="noopener noreferrer">Github</a></li>
+                </ul>
+            </nav>
+        </section>
 
-/* Tipografia */
-.text-gold {
-  color: #F1C40F;
-  margin-bottom: 0.5rem;
-}
+        <hr class="section-divider">
 
-.text-aura-green {
-  color: #00ffa3;
-  line-height: 1.6;
-}
+        <!-- 3. Repositórios Github -->
+        <section class="portfolio-repositories">
+            <h2 class="text-gold">Repositórios Github</h2>
+            <nav>
+                <ul class="site-links">
+                    <li><a href="https://github.com/athoscannavo/fullstack" target="_blank" rel="noopener noreferrer">Residência Fullstack 5.0</a></li>
+                    <li><a href="https://github.com/athoscannavo/tadis_ifrs" target="_blank" rel="noopener noreferrer">Atividades Destaque da Universidade</a></li>
+                    <li><a href="https://github.com/athoscannavo/tcgproject" target="_blank" rel="noopener noreferrer">Projeto de TCG Virtual</a></li>
+                </ul>
+            </nav>
+        </section>
 
-/* Divisor */
-.section-divider {
-  border: none;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, #F1C40F, #3DC9D9, transparent);
-  margin: 0.5rem 0;
-  opacity: 0.6;
-}
+        <hr class="section-divider">
 
-/* Avatar */
-.profile-figure img {
-  width: 430px;
-  height: 430px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #3DC9D9;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-  margin-top: 1rem;
-}
+        <!-- 4. Educação e Certificações -->
+        <section class="portfolio-education">
+            <h2 class="text-gold">Educação e Certificações:</h2>
+            <ul class="education-list text-aura-green">
+                <li>Graduação em Análise e Desenvolvimento de Sistemas (Em Andamento)</li>
+                <li>Residência em Desenvolvimento Full Stack - Instituto Eldorado (Em Andamento)</li>
+            </ul>
+        </section>
 
-/* Listas base */
-ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  margin-top: 1rem;
-}
+        <hr class="section-divider">
 
-/* Grid de Botões (Links) */
-.site-links {
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-}
+        <!-- 5. Carreira -->
+        <section class="portfolio-career">
+            <h2 class="text-gold">Carreira:</h2>
+            <ul class="career-list text-aura-green">
+                <li>Procuradoria Geral do Estado (Estagiário)</li>
+                <li>RedeBrasil (Operador de Cobrança)</li>
+            </ul>
+        </section>
 
-.site-links a {
-  display: inline-block;
-  background-color: rgba(255, 255, 255, 0.08);
-  color: #3DC9D9;
-  padding: 0.6rem 1.2rem;
-  border-radius: 8px;
-  border: 1px solid rgba(61, 201, 217, 0.35);
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.2s ease-in-out;
-}
+    </main>
 
-.site-links a:hover {
-  background-color: #3DC9D9;
-  color: #0E2773;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(61, 201, 217, 0.3);
-}
+</body>
+</html>
